@@ -1,13 +1,9 @@
-//
-//  ViewController.h
-//  AreaMapa
-//
-//  Created by Fernando Alava on 19/06/13.
-//  Copyright (c) 2013 Fernando Alava. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MKMapViewDelegate>
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapa;
 
 @end
